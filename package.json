@@ -1,0 +1,40 @@
+{
+  "name": "react-markdown-to-html",
+  "version": "0.0.1",
+  "description": "From Markdown to Divs. This component is for when you're tired of manually converting Markdown to HTML and want a one stop solution",
+  "main": "index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=0.10.0"
+  },
+  "devDependencies": {
+    "lodash": "^2.4.1",
+    "marked": "^0.3.2",
+    "mocha": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:svenanders/react-markdown-to-html.git"
+  },
+  "homepage": "https://www.robbestad.com",
+  "keywords": [
+    "react",
+    "react-component",
+    "sticky",
+    "component",
+    "markdown-to-html"
+  ],
+  "author": {
+    "name": "Sven Anders Robbestad",
+    "email": "anders@robbestad.com",
+    "url": "http://www.robbestad.com"
+  },
+  "scripts": {},
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Sven Anders Robbestad",
+      "email": "robbestad@gmail.com"
+    }
+  ]
+}
