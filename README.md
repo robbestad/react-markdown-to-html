@@ -6,7 +6,7 @@ Demo at [opensourceprojects.robbestad.com][2]
 
 ## Installation
 
-    % npm install react-stickydiv --save
+    % npm install react-markdown-to-html --save
 
 ## Usage
 
