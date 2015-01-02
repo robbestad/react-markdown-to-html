@@ -17,7 +17,7 @@ Demo at [opensourceprojects.robbestad.com][2]
     MyComponent = React.createClass({
       render: function() {
          return (
-           <Markdown2HTML file="README.md" />
+           <Markdown2HTML src="README.md" />
         );
       }
     });
@@ -28,10 +28,10 @@ Demo at [opensourceprojects.robbestad.com][2]
      MyComponent = React.createClass({displayName: "MyComponent",
        render: function() {
           return (
-            React.createElement(Markdown2HTML, {file: "README.md"})
+            React.createElement(Markdown2HTML, {src: "README.md"})
          );
        }
      });
 
 [1]: https://facebook.github.io/react
-[2]: http://opensourceprojects.robbestad.com
+[2]: http://opensourceprojects.robbestad.com/#/markdown
