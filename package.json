@@ -7,9 +7,11 @@
   "peerDependencies": {
     "react": ">=0.10.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "lodash": "^2.4.1",
-    "marked": "^0.3.2",
+    "marked": "^0.3.2"
+  },
+  "devDependencies": {
     "mocha": "^2.1.0"
   },
   "repository": {
