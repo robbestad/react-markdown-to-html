@@ -6,6 +6,7 @@ if("undefined" == typeof React)
 
 var marked = require('marked');
 var _ = require('lodash');
+var $ = require('jquery');
 
 module.exports = React.createClass({displayName: "Markdown2HTML",
   getInitialState: function(){
