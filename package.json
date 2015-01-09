@@ -1,6 +1,6 @@
 {
   "name": "react-markdown-to-html",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "From Markdown to Divs. This component is for when you're tired of manually converting Markdown to HTML and want a one stop solution",
   "main": "index.js",
   "dependencies": {
