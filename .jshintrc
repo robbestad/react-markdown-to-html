@@ -1,5 +1,6 @@
 {
-  "undef": true,
+  "undef": false,
+  "predef": [ "-React" ],
   "unused": "vars",
   "asi": true,
   "expr": true,

@@ -1,6 +1,8 @@
 "use strict";
 
-var React = require('react');
+if ("undefined" == typeof React)
+    var React = require('react');
+
 var marked = require('marked');
 var _ = require('lodash');
 var $ = require('jquery');
