@@ -20,6 +20,6 @@ module.exports = React.createClass({
         }, this));
     },
     render: function () {
-        return <div ref="md" dangerouslySetInnerHTML={{__html: this.state.md}} />;
+        return React.createElement("div", {ref: "md", dangerouslySetInnerHTML: {__html: this.state.md}});
     }
 });
