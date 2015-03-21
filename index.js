@@ -1,10 +1,8 @@
 "use strict";
 
-if ("undefined" == typeof React)
-    var React = require('react');
-
+var React = require('react');
 var marked = require('marked');
-var _ = require('lodash');
+var _ = require('lodash.bind');
 var $ = require('jquery');
 
 module.exports = React.createClass({

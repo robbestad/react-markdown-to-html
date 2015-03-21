@@ -3,19 +3,16 @@ BIN = ./node_modules/.bin
 install link:
 	@npm $@
 
-test:
-	@$(BIN)/mocha -t 5000 -b -R spec spec.js
-
 lint:
 	jsxhint -c .jshintrc ./index.js
 
-release-patch: lint test
+release-patch: lint
 	@$(call release,patch)
 
-release-minor: lint test
+release-minor: lint
 	@$(call release,minor)
 
-release-major: lint test
+release-major: lint
 	@$(call release,major)
 
 publish:

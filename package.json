@@ -1,12 +1,14 @@
 {
   "name": "react-markdown-to-html",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "From Markdown to Divs. This component is for when you're tired of manually converting Markdown to HTML and want a one stop solution",
   "main": "index.js",
   "dependencies": {
     "jquery": "^2.1.3",
-    "lodash": "^2.4.1",
-    "marked": "^0.3.2",
+    "lodash.bind": "^3.0.0",
+    "marked": "^0.3.2"
+  },
+  "peerDependencies": {
     "react": ">=0.10.0"
   },
   "repository": {
@@ -34,11 +36,13 @@
       "email": "robbestad@gmail.com"
     }
   ],
-  "devDependencies": {
-    "assert": "^1.3.0",
-    "jquery": "^2.1.3",
-    "lodash": "^2.4.1",
-    "marked": "^0.3.3",
-    "react": "^0.12.2"
-  }
+  "readme": "# Markdown to HTML\n\n[React][1] Component that converts a Markdown file to HTML\n\nDemo at [opensourceprojects.robbestad.com][2]\n\n## Installation\n\n    % npm install react-markdown-to-html --save\n\n## Usage\n\n\n#### With JSX\n\n    var Markdown2HTML = require('react-markdown-to-html');\n    MyComponent = React.createClass({\n      render: function() {\n         return (\n           <Markdown2HTML src=\"README.md\" />\n        );\n      }\n    });\n\n#### Without JSX\n\n     var Markdown2HTML = require('react-markdown-to-html');\n     MyComponent = React.createClass({displayName: \"MyComponent\",\n       render: function() {\n          return (\n            React.createElement(Markdown2HTML, {src: \"README.md\"})\n         );\n       }\n     });\n\n[1]: https://facebook.github.io/react\n[2]: http://opensourceprojects.robbestad.com/#/markdown",
+  "readmeFilename": "README.md",
+  "gitHead": "de5b7017ae14167676c2782a5efbb3e87f0ccb27",
+  "bugs": {
+    "url": "https://github.com/svenanders/react-markdown-to-html/issues"
+  },
+  "_id": "react-markdown-to-html@1.0.6",
+  "_shasum": "b8b0fbbf0b3f69366f975ef559cd76e9a0b9182c",
+  "_from": "react-markdown-to-html@>=1.0.6 <2.0.0"
 }
