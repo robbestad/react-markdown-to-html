@@ -2,7 +2,7 @@
 
 var React = require('react');
 var marked = require('marked');
-var _ = require('lodash.bind');
+var _ = require('lodash');
 var $ = require('jquery');
 
 module.exports = React.createClass({
@@ -12,12 +12,13 @@ module.exports = React.createClass({
             md: ''
         };
     },
-    componentDidMount: function () {
+    componentWillMount: function () {
         $.get(this.props.src, _.bind(function(data) {
             this.setState({md: marked(data)});
         }, this));
     },
     render: function () {
-        return React.createElement("div", {ref: "md", dangerouslySetInnerHTML: {__html: this.state.md}});
+        return React.createElement("div", {ref: "md", 
+            dangerouslySetInnerHTML: {__html: this.state.md}});
     }
 });
