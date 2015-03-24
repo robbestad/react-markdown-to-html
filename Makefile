@@ -1,4 +1,5 @@
 BIN = ./node_modules/.bin
+uglify = /usr/local/lib/node_modules/uglify-js/bin/uglifyjs
 
 install link:
 	@npm $@
@@ -6,16 +7,21 @@ install link:
 lint:
 	jsxhint -c .jshintrc ./index.js
 
-release-patch: lint
+patch: lint
 	@$(call release,patch)
 
-release-minor: lint
+minor: lint 
 	@$(call release,minor)
 
-release-major: lint
+major: lint 
 	@$(call release,major)
 
-publish:
+jsx: lint
+	gulp	
+
+publish: jsx 
+	@$(uglify) index.js > dist/react-markdown-to-html.min.js
+	git commit -am "new release" --allow-empty
 	git push --tags origin HEAD:master
 	npm publish
 
