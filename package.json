@@ -4,7 +4,7 @@
   "description": "From Markdown to Divs. This component is for when you're tired of manually converting Markdown to HTML and want a one stop solution",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^2.1.3",
+    "jquery": "^1.11.2",
     "lodash": "^3.5.0",
     "marked": "^0.3.2"
   },
