@@ -2,6 +2,18 @@
 
 var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
 
+md: ""
+};
+},
+componentWillMount: function componentWillMount() {
+    $.get(this.props.src, _.bind(function (data) {
+        this.setState({ md: marked(data) });
+    }, this));
+},
+render: function render() {
+    return React.createElement("div", { ref: "md", dangerouslySetInnerHTML: { __html: this.state.md } });
+}
+});
 var $ = _interopRequire(require("jquery"));
 
 var React = require("react");
@@ -16,15 +28,3 @@ module.exports = React.createClass({
     },
     getInitialState: function getInitialState() {
         return {
-            md: ""
-        };
-    },
-    componentWillMount: function componentWillMount() {
-        $.get(this.props.src, _.bind(function (data) {
-            this.setState({ md: marked(data) });
-        }, this));
-    },
-    render: function render() {
-        return React.createElement("div", { ref: "md", dangerouslySetInnerHTML: { __html: this.state.md } });
-    }
-});
